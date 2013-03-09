@@ -1,0 +1,24 @@
+---
+target_definitions:
+  - name: Pods
+    link_with_first_target: true
+    platform: ios
+    dependencies:
+    - SSZipArchive:
+      - '>= 1'
+    - ASIHTTPRequest:
+      - ~> 1.8.0
+    - Reachability
+    - ASIWebPageRequest:
+      - < 1.8.2
+    children:
+      - name: Tests
+        exclusive: true
+        dependencies:
+        - Expecta
+        - Specta
+
+workspace: MyWorkspace
+generate_bridge_support: true
+set_arc_compatibility_flag: true
+

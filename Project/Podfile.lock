@@ -1,0 +1,79 @@
+PODS:
+  - DSUnixTask (0.1.0):
+    - DSUnixTask/Core (= 0.1.0)
+    - DSUnixTask/XPCClient (= 0.1.0)
+    - DSUnixTask/XPCService (= 0.1.0)
+  - DSUnixTask/Core (0.1.0):
+    - DSUnixTask/Core/TaskManagers (= 0.1.0)
+    - DSUnixTask/Core/TaskRunner (= 0.1.0)
+    - DSUnixTask/Core/Tasks (= 0.1.0)
+  - DSUnixTask/Core/TaskManagers (0.1.0)
+  - DSUnixTask/Core/TaskRunner (0.1.0)
+  - DSUnixTask/Core/Tasks (0.1.0)
+  - DSUnixTask/XPCClient (0.1.0):
+    - DSUnixTask/Core
+  - DSUnixTask/XPCService (0.1.0):
+    - DSUnixTask/Core/TaskRunner
+  - Expecta (0.2.1)
+  - JRSwizzle (1.0)
+  - KGNoise (1.1.0)
+  - libextobjc/EXTConcreteProtocol (0.2.5):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.2.5):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.2.5):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.2.5)
+  - LibYAML (0.1.4)
+  - NSString-Ruby (1.0a)
+  - ObjectiveSugar (0.6.2)
+  - OCHamcrest (1.9)
+  - OCMockito (0.23):
+    - OCHamcrest (= 1.9)
+  - ReactiveCocoa (1.0.0):
+    - ReactiveCocoa/Core (= 1.0.0)
+    - ReactiveCocoa/RACExtensions (= 1.0.0)
+  - ReactiveCocoa/Core (1.0.0):
+    - JRSwizzle (~> 1.0)
+    - libextobjc/EXTConcreteProtocol (~> 0.2.5)
+    - libextobjc/EXTKeyPathCoding (~> 0.2.5)
+    - libextobjc/EXTScope (~> 0.2.5)
+  - ReactiveCocoa/RACExtensions (1.0.0):
+    - ReactiveCocoa/Core
+  - REKit (1.0.0)
+  - Specta (0.1.8)
+  - TransformerKit (0.0.1)
+  - YAML.framework (0.0.1):
+    - LibYAML (~> 0.1.4)
+
+DEPENDENCIES:
+  - DSUnixTask (~> 0.1.0)
+  - Expecta
+  - KGNoise
+  - NSString-Ruby
+  - ObjectiveSugar
+  - OCMockito
+  - ReactiveCocoa
+  - REKit
+  - Specta
+  - TransformerKit
+  - YAML.framework (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  DSUnixTask: a22f7ce58c9379f97e20bd32b307caadb9edd5b8
+  Expecta: d46fb1bd78c90a83da0158b9b1e108de106e369f
+  JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
+  KGNoise: 8ebc646c982cf468f01b4789e4ab1cf849eb413d
+  libextobjc: 2cbc74caf8bdc74a86fdf24673f773c83424ea98
+  LibYAML: 1808f3668cf0294e41d5e69398593939d4e1c0e2
+  NSString-Ruby: 1b397300ba44ab5310986a91519eb9cc70a1c41b
+  ObjectiveSugar: 50bcd329b18ab6da6457e1bf55be71acb7c39d44
+  OCHamcrest: f8393efd5a49d91879be573635d6183effacc0ab
+  OCMockito: 2223021dd82697fc536c403d6850d2ed8ffae578
+  ReactiveCocoa: bde72a9123e7bd565d06d677d8ad79b18971aec7
+  REKit: 3bda2d3d7b4c0a5cf653e2f5551158b16aa9ba56
+  Specta: cf47ef9f8c3ae15a9d59ee5e74d2b560900d2249
+  TransformerKit: 5d914b347bdad31fae9ea63b76f2d304f7fe3c6a
+  YAML.framework: 75405ccff0a75c2d72831ee66012e8e84b527c2e
+
+COCOAPODS: 0.17.0.rc3

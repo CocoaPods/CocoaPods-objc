@@ -1,0 +1,21 @@
+
+target 'Demo' do
+  podspec :path => '../CocoaPods-ObjC.podspec'
+  pod 'TransformerKit'
+  pod 'KGNoise'
+
+  pod 'ReactiveCocoa'
+  pod 'NSString-Ruby'
+  pod 'REKit'
+  pod 'ObjectiveSugar'
+end
+
+target 'Tests' do
+  pod 'Expecta'
+  pod 'Specta'
+  pod 'OCMockito'
+end
+
+#target 'executable', :exclusive => true do
+#  pod 'DSUnixTask/XPCService'
+#end
