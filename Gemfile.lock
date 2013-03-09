@@ -1,35 +1,3 @@
-PATH
-  remote: ../../xcodebuild-rb
-  specs:
-    xcodebuild-rb (0.2.0)
-      state_machine (~> 1.1.2)
-
-PATH
-  remote: ../CocoaPods
-  specs:
-    cocoapods (0.17.0.rc2)
-      activesupport (~> 3.2.6)
-      claide (~> 0.2.0)
-      cocoapods-core (= 0.17.0.rc2)
-      cocoapods-downloader (~> 0.1.0)
-      colored (~> 1.2)
-      escape (~> 0.0.4)
-      faraday (~> 0.8.1)
-      json (~> 1.7.3)
-      octokit (~> 1.7)
-      open4 (~> 1.3.0)
-      rake (~> 10.0.0)
-      xcodeproj (~> 0.5.1)
-
-PATH
-  remote: ../Core
-  specs:
-    cocoapods-core (0.17.0.rc2)
-      activesupport (~> 3.2.6)
-      faraday (~> 0.8.1)
-      octokit (~> 1.7)
-      rake (~> 10.0.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -38,6 +6,24 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.3)
     claide (0.2.0)
+    cocoapods (0.17.0.rc3)
+      activesupport (~> 3.2.6)
+      claide (~> 0.2.0)
+      cocoapods-core (= 0.17.0.rc3)
+      cocoapods-downloader (~> 0.1.0)
+      colored (~> 1.2)
+      escape (~> 0.0.4)
+      faraday (~> 0.8.1)
+      json (~> 1.7.3)
+      octokit (~> 1.7)
+      open4 (~> 1.3.0)
+      rake (~> 10.0.0)
+      xcodeproj (~> 0.5.2)
+    cocoapods-core (0.17.0.rc3)
+      activesupport (~> 3.2.6)
+      faraday (~> 0.8.1)
+      octokit (~> 1.7)
+      rake (~> 10.0.0)
     cocoapods-downloader (0.1.0)
     colored (1.2)
     escape (0.0.4)
@@ -60,8 +46,7 @@ GEM
       netrc (~> 0.7.7)
     open4 (1.3.0)
     rake (10.0.3)
-    state_machine (1.1.2)
-    xcodeproj (0.5.1)
+    xcodeproj (0.5.2)
       activesupport (~> 3.2.6)
       colored (~> 1.2)
 
@@ -69,6 +54,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cocoapods!
-  cocoapods-core!
-  xcodebuild-rb!
+  cocoapods (= 0.17.0rc3)
+  cocoapods-core (= 0.17.0rc3)
+  rake

@@ -43,7 +43,7 @@ PODS:
   - REKit (1.0.0)
   - Specta (0.1.8)
   - TransformerKit (0.0.1)
-  - YAML.framework (0.0.1):
+  - YAML-Framework (0.0.1):
     - LibYAML (~> 0.1.4)
 
 DEPENDENCIES:
@@ -57,7 +57,7 @@ DEPENDENCIES:
   - REKit
   - Specta
   - TransformerKit
-  - YAML.framework (~> 0.0.1)
+  - YAML-Framework
 
 SPEC CHECKSUMS:
   DSUnixTask: a22f7ce58c9379f97e20bd32b307caadb9edd5b8
@@ -65,7 +65,7 @@ SPEC CHECKSUMS:
   JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
   KGNoise: 8ebc646c982cf468f01b4789e4ab1cf849eb413d
   libextobjc: 2cbc74caf8bdc74a86fdf24673f773c83424ea98
-  LibYAML: 1808f3668cf0294e41d5e69398593939d4e1c0e2
+  LibYAML: 49b77e5b3f4417fa512a8f1f4675a78480bf6b3d
   NSString-Ruby: 1b397300ba44ab5310986a91519eb9cc70a1c41b
   ObjectiveSugar: 50bcd329b18ab6da6457e1bf55be71acb7c39d44
   OCHamcrest: f8393efd5a49d91879be573635d6183effacc0ab
@@ -74,6 +74,6 @@ SPEC CHECKSUMS:
   REKit: 3bda2d3d7b4c0a5cf653e2f5551158b16aa9ba56
   Specta: cf47ef9f8c3ae15a9d59ee5e74d2b560900d2249
   TransformerKit: 5d914b347bdad31fae9ea63b76f2d304f7fe3c6a
-  YAML.framework: 75405ccff0a75c2d72831ee66012e8e84b527c2e
+  YAML-Framework: 58356f92e0f5e1461af430703497b7053bed6fa7
 
 COCOAPODS: 0.17.0.rc3

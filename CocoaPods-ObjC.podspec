@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/**/*.{h,m}'
   s.requires_arc = true
 
-  s.dependency 'YAML.framework', '~> 0.0.1'
+  s.dependency 'YAML-Framework'
   s.dependency 'DSUnixTask',     '~> 0.1.0'
 end

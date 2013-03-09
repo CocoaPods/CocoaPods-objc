@@ -1,6 +1,5 @@
 require 'cocoapods-core'
 require 'rubygems'
-require 'xcodebuild'
 require 'active_support'
 
 #-----------------------------------------------------------------------------#
