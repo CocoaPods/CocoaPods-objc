@@ -8,6 +8,7 @@
 
 #import "CPTargetDefinition.h"
 #import "CPDictionaryBackedObject+Private.h"
+#import "CPDependency.h"
 
 @interface CPTargetDefinition ()
 @property (readwrite) NSMutableArray* children;

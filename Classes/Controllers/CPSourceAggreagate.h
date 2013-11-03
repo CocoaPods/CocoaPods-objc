@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CPSource.h"
+
+@class CPSource;
 
 /**
  Manages a collection of sources which reside in the same path.

@@ -7,7 +7,6 @@
 //
 
 #import "CPProtoTargetDefinition.h"
-#import "CPDependency.h"
 
 /**
  A target definition describes a the dependencies of Pod library which can be

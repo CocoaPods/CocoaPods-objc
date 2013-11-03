@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CPSource.h"
 
 /**
  Describes a Pod. See Pod::Set.

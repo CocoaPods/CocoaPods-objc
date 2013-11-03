@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CPSet.h"
-#import "CPSpecification.h"
-#import "CPPodfile.h"
+
+@class CPSpecification;
+@class CPPodfile;
 
 /**
  Interfaces with the CocoaPods REPL to allow to cosume the Ruby DSL 

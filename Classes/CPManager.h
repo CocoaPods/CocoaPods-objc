@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CPConfig.h"
-#import "CPSet.h"
-#import "CPSpecification.h"
-#import "CPPodfile.h"
-#import "DSUnixTask.h"
+
+@class CPConfig;
+@class CPPodfile;
+@class CPSpecification;
+@class DSUnixTask;
 
 @interface CPManager : NSObject
 

@@ -6,9 +6,11 @@
 //  Copyright (c) 2013 CocoaPods. All rights reserved.
 //
 
-#import "CPReplManager.h"
 #import <DSUnixTaskSubProcessManager.h>
+#import "CPReplManager.h"
 #import "CPHelpers.h"
+#import "CPSpecification.h"
+#import "CPPodfile.h"
 
 NSString * const kReplReadyString = @"\n\r";
 

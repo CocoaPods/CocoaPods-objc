@@ -7,7 +7,6 @@
 //
 
 #import "CPProtoPodfile.h"
-#import "CPTargetDefinition.h"
 
 /**
  The Podfile is a specification which describes the dependencies of one or more
