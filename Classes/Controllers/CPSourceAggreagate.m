@@ -9,6 +9,7 @@
 #import "CPSourceAggreagate.h"
 #import "CPHelpers.h"
 #import "CPSet.h"
+#import "CPSource.h"
 
 @implementation CPSourceAggreagate {
   NSArray* _sources;

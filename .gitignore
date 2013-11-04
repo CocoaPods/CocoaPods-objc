@@ -22,3 +22,5 @@ build/
 *.dep
 # Cocoapods
 Pods
+Project/DerivedData
+Project/CocoaPods-ObjC.xcworkspace/xcshareddata/

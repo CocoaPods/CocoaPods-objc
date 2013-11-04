@@ -8,6 +8,7 @@
 
 #import "CPSet.h"
 #import "CPVersion.h"
+#import "CPSource.h"
 
 @implementation CPSet
 

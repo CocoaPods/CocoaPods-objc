@@ -8,6 +8,7 @@
 
 #import "CPPodfile.h"
 #import "CPDictionaryBackedObject+Private.h"
+#import "CPTargetDefinition.h"
 
 @interface CPPodfile ()
 @property (readwrite) NSMutableArray* targetDefinitions;

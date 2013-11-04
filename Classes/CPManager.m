@@ -11,6 +11,9 @@
 #import "DSUnixTaskSubProcessManager.h"
 #import "CPHelpers.h"
 #import "CPVersion.h"
+#import "CPConfig.h"
+#import "CPSet.h"
+#import "CPSourceAggreagate.h"
 
 @interface CPManager ()
 

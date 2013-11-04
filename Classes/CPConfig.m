@@ -7,6 +7,7 @@
 //
 
 #import "CPConfig.h"
+#import "CPSourceAggreagate.h"
 
 @implementation CPConfig
 

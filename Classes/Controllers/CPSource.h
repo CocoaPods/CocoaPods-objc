@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CPSpecification.h"
 
 /**
  Provides the information about the Pods of a given repo. This class mimics
