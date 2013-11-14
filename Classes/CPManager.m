@@ -13,7 +13,7 @@
 #import "CPVersion.h"
 #import "CPConfig.h"
 #import "CPSet.h"
-#import "CPSourceAggreagate.h"
+#import "CPSourceAggregate.h"
 
 @interface CPManager ()
 
@@ -93,7 +93,7 @@
 
 - (NSArray *)loadSets;
 {
-  CPSourceAggreagate *aggregate = [self.config sourceAggregate];
+  CPSourceAggregate *aggregate = [self.config sourceAggregate];
   NSArray* sets = [aggregate sets];
   [self setSets:sets];
   return sets;

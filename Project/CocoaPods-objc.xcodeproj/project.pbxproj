@@ -25,7 +25,7 @@
 		E5BD22E516E9FCC500EAAEB7 /* AFNetworking.podspec.yaml in Resources */ = {isa = PBXBuildFile; fileRef = E5BD22D916E9FCC500EAAEB7 /* AFNetworking.podspec.yaml */; };
 		E5BD22E616E9FCC500EAAEB7 /* Podfile.yaml in Resources */ = {isa = PBXBuildFile; fileRef = E5BD22DA16E9FCC500EAAEB7 /* Podfile.yaml */; };
 		E5BD230E16E9FCE800EAAEB7 /* CPSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22EC16E9FCE800EAAEB7 /* CPSource.m */; };
-		E5BD230F16E9FCE800EAAEB7 /* CPSourceAggreagate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggreagate.m */; };
+		E5BD230F16E9FCE800EAAEB7 /* CPSourceAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggregate.m */; };
 		E5BD231016E9FCE800EAAEB7 /* CPConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22F016E9FCE800EAAEB7 /* CPConfig.m */; };
 		E5BD231116E9FCE800EAAEB7 /* CPHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22F216E9FCE800EAAEB7 /* CPHelpers.m */; };
 		E5BD231216E9FCE800EAAEB7 /* CPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22F416E9FCE800EAAEB7 /* CPManager.m */; };
@@ -86,8 +86,8 @@
 		E5BD22DA16E9FCC500EAAEB7 /* Podfile.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.yaml; sourceTree = "<group>"; };
 		E5BD22EB16E9FCE800EAAEB7 /* CPSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSource.h; sourceTree = "<group>"; };
 		E5BD22EC16E9FCE800EAAEB7 /* CPSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSource.m; sourceTree = "<group>"; };
-		E5BD22ED16E9FCE800EAAEB7 /* CPSourceAggreagate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSourceAggreagate.h; sourceTree = "<group>"; };
-		E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggreagate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSourceAggreagate.m; sourceTree = "<group>"; };
+		E5BD22ED16E9FCE800EAAEB7 /* CPSourceAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSourceAggregate.h; sourceTree = "<group>"; };
+		E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSourceAggregate.m; sourceTree = "<group>"; };
 		E5BD22EF16E9FCE800EAAEB7 /* CPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPConfig.h; sourceTree = "<group>"; };
 		E5BD22F016E9FCE800EAAEB7 /* CPConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPConfig.m; sourceTree = "<group>"; };
 		E5BD22F116E9FCE800EAAEB7 /* CPHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPHelpers.h; sourceTree = "<group>"; };
@@ -265,8 +265,8 @@
 			children = (
 				E5BD22EB16E9FCE800EAAEB7 /* CPSource.h */,
 				E5BD22EC16E9FCE800EAAEB7 /* CPSource.m */,
-				E5BD22ED16E9FCE800EAAEB7 /* CPSourceAggreagate.h */,
-				E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggreagate.m */,
+				E5BD22ED16E9FCE800EAAEB7 /* CPSourceAggregate.h */,
+				E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggregate.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -507,7 +507,7 @@
 				E5BD229216E9FAEF00EAAEB7 /* main.m in Sources */,
 				E5BD229916E9FAEF00EAAEB7 /* CPAppDelegate.m in Sources */,
 				E5BD230E16E9FCE800EAAEB7 /* CPSource.m in Sources */,
-				E5BD230F16E9FCE800EAAEB7 /* CPSourceAggreagate.m in Sources */,
+				E5BD230F16E9FCE800EAAEB7 /* CPSourceAggregate.m in Sources */,
 				E5BD231016E9FCE800EAAEB7 /* CPConfig.m in Sources */,
 				E5BD231116E9FCE800EAAEB7 /* CPHelpers.m in Sources */,
 				E5BD231216E9FCE800EAAEB7 /* CPManager.m in Sources */,

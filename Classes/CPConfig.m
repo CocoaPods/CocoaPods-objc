@@ -7,7 +7,7 @@
 //
 
 #import "CPConfig.h"
-#import "CPSourceAggreagate.h"
+#import "CPSourceAggregate.h"
 
 @implementation CPConfig
 
@@ -21,7 +21,7 @@ NSString *const kCPMinimumRequiredCocoaPodsBinaryVersion = @"0.17.0.rc2";
     _useShell = true;
     _reposDir = [NSHomeDirectory() stringByAppendingPathComponent:@".cocoapods"];
     _minimumSupportedCocoaPodsVersion  = kCPMinimumRequiredCocoaPodsBinaryVersion;
-    _sourceAggregate = [[CPSourceAggreagate alloc] initWithPath:_reposDir];
+    _sourceAggregate = [[CPSourceAggregate alloc] initWithPath:_reposDir];
   }
   return self;
 }

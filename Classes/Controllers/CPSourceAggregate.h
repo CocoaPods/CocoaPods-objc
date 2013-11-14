@@ -13,7 +13,7 @@
 /**
  Manages a collection of sources which reside in the same path.
 */
-@interface CPSourceAggreagate : NSObject
+@interface CPSourceAggregate : NSObject
 
 ///-----------------------------------------------------------------------------
 /// @name Initialization & Configuration

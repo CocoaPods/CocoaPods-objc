@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 CocoaPods. MIT License.
 //
 
-#import "CPSourceAggreagate.h"
+#import "CPSourceAggregate.h"
 #import "CPHelpers.h"
 #import "CPSet.h"
 #import "CPSource.h"
 
-@implementation CPSourceAggreagate {
+@implementation CPSourceAggregate {
   NSArray* _sources;
 }
 

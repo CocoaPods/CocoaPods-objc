@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class CPSourceAggreagate;
+@class CPSourceAggregate;
 @class CPSource;
 
 @interface CPConfig : NSObject
@@ -51,7 +51,7 @@
 /**
  The source aggreagate from the repos dir.
 */
-@property (readonly) CPSourceAggreagate *sourceAggregate;
+@property (readonly) CPSourceAggregate *sourceAggregate;
 
 /**
  The master repo.
