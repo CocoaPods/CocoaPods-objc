@@ -25,24 +25,7 @@
 		E5BD229216E9FAEF00EAAEB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD229116E9FAEF00EAAEB7 /* main.m */; };
 		E5BD229916E9FAEF00EAAEB7 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD229816E9FAEF00EAAEB7 /* CPAppDelegate.m */; };
 		E5BD229C16E9FAEF00EAAEB7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5BD229A16E9FAEF00EAAEB7 /* MainMenu.xib */; };
-		E5BD230E16E9FCE800EAAEB7 /* CPSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22EC16E9FCE800EAAEB7 /* CPSource.m */; };
-		E5BD230F16E9FCE800EAAEB7 /* CPSourceAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggregate.m */; };
-		E5BD231016E9FCE800EAAEB7 /* CPConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22F016E9FCE800EAAEB7 /* CPConfig.m */; };
-		E5BD231116E9FCE800EAAEB7 /* CPHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22F216E9FCE800EAAEB7 /* CPHelpers.m */; };
-		E5BD231216E9FCE800EAAEB7 /* CPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22F416E9FCE800EAAEB7 /* CPManager.m */; };
-		E5BD231316E9FCE800EAAEB7 /* CPReplManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22F616E9FCE800EAAEB7 /* CPReplManager.m */; };
-		E5BD231416E9FCE800EAAEB7 /* CPDictionaryBackedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22FB16E9FCE800EAAEB7 /* CPDictionaryBackedObject.m */; };
-		E5BD231516E9FCE800EAAEB7 /* CPLockfile.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD22FD16E9FCE800EAAEB7 /* CPLockfile.m */; };
-		E5BD231716E9FCE800EAAEB7 /* CPPodfile.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD230116E9FCE800EAAEB7 /* CPPodfile.m */; };
-		E5BD231816E9FCE800EAAEB7 /* CPSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD230316E9FCE800EAAEB7 /* CPSpecification.m */; };
-		E5BD231916E9FCE800EAAEB7 /* CPTargetDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD230516E9FCE800EAAEB7 /* CPTargetDefinition.m */; };
-		E5BD231A16E9FCE800EAAEB7 /* CPDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD230816E9FCE800EAAEB7 /* CPDependency.m */; };
-		E5BD231B16E9FCE800EAAEB7 /* CPSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD230A16E9FCE800EAAEB7 /* CPSet.m */; };
-		E5BD231C16E9FCE800EAAEB7 /* CPVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BD230C16E9FCE800EAAEB7 /* CPVersion.m */; };
 		E5BD236B16EA02EC00EAAEB7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BD236A16EA02EC00EAAEB7 /* WebKit.framework */; };
-		E5F2BF6D16EA950A00DD505F /* CPProtoPodfile.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F2BF6316EA950A00DD505F /* CPProtoPodfile.m */; };
-		E5F2BF6E16EA950A00DD505F /* CPProtoSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F2BF6516EA950A00DD505F /* CPProtoSpecification.m */; };
-		E5F2BF6F16EA950A00DD505F /* CPProtoTargetDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F2BF6716EA950A00DD505F /* CPProtoTargetDefinition.m */; };
 		E5F2BF7316EBA71300DD505F /* CocoaPods-objc.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E5F2BF7216EBA71300DD505F /* CocoaPods-objc.podspec */; };
 /* End PBXBuildFile section */
 
@@ -91,44 +74,9 @@
 		E5BD22D716E9FCC500EAAEB7 /* CPVersionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPVersionTests.m; path = ../../Tests/CPVersionTests.m; sourceTree = "<group>"; };
 		E5BD22D916E9FCC500EAAEB7 /* AFNetworking.podspec.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AFNetworking.podspec.yaml; sourceTree = "<group>"; };
 		E5BD22DA16E9FCC500EAAEB7 /* Podfile.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.yaml; sourceTree = "<group>"; };
-		E5BD22EB16E9FCE800EAAEB7 /* CPSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSource.h; sourceTree = "<group>"; };
-		E5BD22EC16E9FCE800EAAEB7 /* CPSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSource.m; sourceTree = "<group>"; };
-		E5BD22ED16E9FCE800EAAEB7 /* CPSourceAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSourceAggregate.h; sourceTree = "<group>"; };
-		E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSourceAggregate.m; sourceTree = "<group>"; };
-		E5BD22EF16E9FCE800EAAEB7 /* CPConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPConfig.h; sourceTree = "<group>"; };
-		E5BD22F016E9FCE800EAAEB7 /* CPConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPConfig.m; sourceTree = "<group>"; };
-		E5BD22F116E9FCE800EAAEB7 /* CPHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPHelpers.h; sourceTree = "<group>"; };
-		E5BD22F216E9FCE800EAAEB7 /* CPHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPHelpers.m; sourceTree = "<group>"; };
-		E5BD22F316E9FCE800EAAEB7 /* CPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPManager.h; sourceTree = "<group>"; };
-		E5BD22F416E9FCE800EAAEB7 /* CPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPManager.m; sourceTree = "<group>"; };
-		E5BD22F516E9FCE800EAAEB7 /* CPReplManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPReplManager.h; sourceTree = "<group>"; };
-		E5BD22F616E9FCE800EAAEB7 /* CPReplManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPReplManager.m; sourceTree = "<group>"; };
-		E5BD22F916E9FCE800EAAEB7 /* CPDictionaryBackedObject+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPDictionaryBackedObject+Private.h"; sourceTree = "<group>"; };
-		E5BD22FA16E9FCE800EAAEB7 /* CPDictionaryBackedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDictionaryBackedObject.h; sourceTree = "<group>"; };
-		E5BD22FB16E9FCE800EAAEB7 /* CPDictionaryBackedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDictionaryBackedObject.m; sourceTree = "<group>"; };
-		E5BD22FC16E9FCE800EAAEB7 /* CPLockfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLockfile.h; sourceTree = "<group>"; };
-		E5BD22FD16E9FCE800EAAEB7 /* CPLockfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLockfile.m; sourceTree = "<group>"; };
-		E5BD230016E9FCE800EAAEB7 /* CPPodfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPodfile.h; sourceTree = "<group>"; };
-		E5BD230116E9FCE800EAAEB7 /* CPPodfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPodfile.m; sourceTree = "<group>"; };
-		E5BD230216E9FCE800EAAEB7 /* CPSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecification.h; sourceTree = "<group>"; };
-		E5BD230316E9FCE800EAAEB7 /* CPSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecification.m; sourceTree = "<group>"; };
-		E5BD230416E9FCE800EAAEB7 /* CPTargetDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTargetDefinition.h; sourceTree = "<group>"; };
-		E5BD230516E9FCE800EAAEB7 /* CPTargetDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTargetDefinition.m; sourceTree = "<group>"; };
-		E5BD230716E9FCE800EAAEB7 /* CPDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDependency.h; sourceTree = "<group>"; };
-		E5BD230816E9FCE800EAAEB7 /* CPDependency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDependency.m; sourceTree = "<group>"; };
-		E5BD230916E9FCE800EAAEB7 /* CPSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSet.h; sourceTree = "<group>"; };
-		E5BD230A16E9FCE800EAAEB7 /* CPSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSet.m; sourceTree = "<group>"; };
-		E5BD230B16E9FCE800EAAEB7 /* CPVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPVersion.h; sourceTree = "<group>"; };
-		E5BD230C16E9FCE800EAAEB7 /* CPVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPVersion.m; sourceTree = "<group>"; };
 		E5BD232616E9FE9000EAAEB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		E5BD232716E9FE9000EAAEB7 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Tests-Info.plist"; path = "Tests/Tests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5BD236A16EA02EC00EAAEB7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		E5F2BF6216EA950A00DD505F /* CPProtoPodfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPProtoPodfile.h; sourceTree = "<group>"; };
-		E5F2BF6316EA950A00DD505F /* CPProtoPodfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPProtoPodfile.m; sourceTree = "<group>"; };
-		E5F2BF6416EA950A00DD505F /* CPProtoSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPProtoSpecification.h; sourceTree = "<group>"; };
-		E5F2BF6516EA950A00DD505F /* CPProtoSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPProtoSpecification.m; sourceTree = "<group>"; };
-		E5F2BF6616EA950A00DD505F /* CPProtoTargetDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPProtoTargetDefinition.h; sourceTree = "<group>"; };
-		E5F2BF6716EA950A00DD505F /* CPProtoTargetDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPProtoTargetDefinition.m; sourceTree = "<group>"; };
 		E5F2BF7216EBA71300DD505F /* CocoaPods-objc.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "CocoaPods-objc.podspec"; path = "../CocoaPods-objc.podspec"; sourceTree = "<group>"; };
 		E96D4711E71433BCB61256ED /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,79 +224,9 @@
 		E5BD22E916E9FCE800EAAEB7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E5BD22F716E9FCE800EAAEB7 /* Models */,
-				E5BD22EA16E9FCE800EAAEB7 /* Controllers */,
-				E5BD22EF16E9FCE800EAAEB7 /* CPConfig.h */,
-				E5BD22F016E9FCE800EAAEB7 /* CPConfig.m */,
-				E5BD22F116E9FCE800EAAEB7 /* CPHelpers.h */,
-				E5BD22F216E9FCE800EAAEB7 /* CPHelpers.m */,
-				E5BD22F316E9FCE800EAAEB7 /* CPManager.h */,
-				E5BD22F416E9FCE800EAAEB7 /* CPManager.m */,
-				E5BD22F516E9FCE800EAAEB7 /* CPReplManager.h */,
-				E5BD22F616E9FCE800EAAEB7 /* CPReplManager.m */,
-				E5BD230D16E9FCE800EAAEB7 /* Views */,
 			);
 			name = Classes;
 			path = ../Classes;
-			sourceTree = "<group>";
-		};
-		E5BD22EA16E9FCE800EAAEB7 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E5BD22EB16E9FCE800EAAEB7 /* CPSource.h */,
-				E5BD22EC16E9FCE800EAAEB7 /* CPSource.m */,
-				E5BD22ED16E9FCE800EAAEB7 /* CPSourceAggregate.h */,
-				E5BD22EE16E9FCE800EAAEB7 /* CPSourceAggregate.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		E5BD22F716E9FCE800EAAEB7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E5BD22F816E9FCE800EAAEB7 /* Basic Models */,
-				E5BD230616E9FCE800EAAEB7 /* Support Models */,
-				E5F2BF5F16EA950A00DD505F /* Generated */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E5BD22F816E9FCE800EAAEB7 /* Basic Models */ = {
-			isa = PBXGroup;
-			children = (
-				E5BD22F916E9FCE800EAAEB7 /* CPDictionaryBackedObject+Private.h */,
-				E5BD22FA16E9FCE800EAAEB7 /* CPDictionaryBackedObject.h */,
-				E5BD22FB16E9FCE800EAAEB7 /* CPDictionaryBackedObject.m */,
-				E5BD22FC16E9FCE800EAAEB7 /* CPLockfile.h */,
-				E5BD22FD16E9FCE800EAAEB7 /* CPLockfile.m */,
-				E5BD230016E9FCE800EAAEB7 /* CPPodfile.h */,
-				E5BD230116E9FCE800EAAEB7 /* CPPodfile.m */,
-				E5BD230416E9FCE800EAAEB7 /* CPTargetDefinition.h */,
-				E5BD230516E9FCE800EAAEB7 /* CPTargetDefinition.m */,
-				E5BD230216E9FCE800EAAEB7 /* CPSpecification.h */,
-				E5BD230316E9FCE800EAAEB7 /* CPSpecification.m */,
-			);
-			path = "Basic Models";
-			sourceTree = "<group>";
-		};
-		E5BD230616E9FCE800EAAEB7 /* Support Models */ = {
-			isa = PBXGroup;
-			children = (
-				E5BD230716E9FCE800EAAEB7 /* CPDependency.h */,
-				E5BD230816E9FCE800EAAEB7 /* CPDependency.m */,
-				E5BD230916E9FCE800EAAEB7 /* CPSet.h */,
-				E5BD230A16E9FCE800EAAEB7 /* CPSet.m */,
-				E5BD230B16E9FCE800EAAEB7 /* CPVersion.h */,
-				E5BD230C16E9FCE800EAAEB7 /* CPVersion.m */,
-			);
-			path = "Support Models";
-			sourceTree = "<group>";
-		};
-		E5BD230D16E9FCE800EAAEB7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		E5BD231D16E9FDFB00EAAEB7 /* Test Supporting Files */ = {
@@ -380,20 +258,6 @@
 			name = en.lproj;
 			path = Tests/en.lproj;
 			sourceTree = SOURCE_ROOT;
-		};
-		E5F2BF5F16EA950A00DD505F /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				E5F2BF6216EA950A00DD505F /* CPProtoPodfile.h */,
-				E5F2BF6316EA950A00DD505F /* CPProtoPodfile.m */,
-				E5F2BF6416EA950A00DD505F /* CPProtoSpecification.h */,
-				E5F2BF6516EA950A00DD505F /* CPProtoSpecification.m */,
-				E5F2BF6616EA950A00DD505F /* CPProtoTargetDefinition.h */,
-				E5F2BF6716EA950A00DD505F /* CPProtoTargetDefinition.m */,
-			);
-			name = Generated;
-			path = "Basic Models/Generated";
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -595,23 +459,6 @@
 			files = (
 				E5BD229216E9FAEF00EAAEB7 /* main.m in Sources */,
 				E5BD229916E9FAEF00EAAEB7 /* CPAppDelegate.m in Sources */,
-				E5BD230E16E9FCE800EAAEB7 /* CPSource.m in Sources */,
-				E5BD230F16E9FCE800EAAEB7 /* CPSourceAggregate.m in Sources */,
-				E5BD231016E9FCE800EAAEB7 /* CPConfig.m in Sources */,
-				E5BD231116E9FCE800EAAEB7 /* CPHelpers.m in Sources */,
-				E5BD231216E9FCE800EAAEB7 /* CPManager.m in Sources */,
-				E5BD231316E9FCE800EAAEB7 /* CPReplManager.m in Sources */,
-				E5BD231416E9FCE800EAAEB7 /* CPDictionaryBackedObject.m in Sources */,
-				E5BD231516E9FCE800EAAEB7 /* CPLockfile.m in Sources */,
-				E5BD231716E9FCE800EAAEB7 /* CPPodfile.m in Sources */,
-				E5BD231816E9FCE800EAAEB7 /* CPSpecification.m in Sources */,
-				E5BD231916E9FCE800EAAEB7 /* CPTargetDefinition.m in Sources */,
-				E5BD231A16E9FCE800EAAEB7 /* CPDependency.m in Sources */,
-				E5BD231B16E9FCE800EAAEB7 /* CPSet.m in Sources */,
-				E5BD231C16E9FCE800EAAEB7 /* CPVersion.m in Sources */,
-				E5F2BF6D16EA950A00DD505F /* CPProtoPodfile.m in Sources */,
-				E5F2BF6E16EA950A00DD505F /* CPProtoSpecification.m in Sources */,
-				E5F2BF6F16EA950A00DD505F /* CPProtoTargetDefinition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
