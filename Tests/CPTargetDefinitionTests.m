@@ -51,18 +51,24 @@ describe(@"A TargetDefinition loaded from a YAML file", ^{
   });
 
   it (@"returns the dependencies", ^{
-    NSArray *expected =
-    @[
-      [[CPDependency alloc] initWithName:@"SSZipArchive" requirements:@[@">= 1"]],
-      [[CPDependency alloc] initWithName:@"ASIHTTPRequest" requirements:@[@"~> 1.8.0"]],
-      [[CPDependency alloc] initWithName:@"ASIWebPageRequest" requirements:@[@"< 1.8.2"]],
-//      [[CPDependency alloc] initWithName:@"Reachability" requirements:nil],
-    ];
     CPTargetDefinition *td = targetDefinition();
-    CPTargetDefinition *demoTd = td.children[1];
-    expect(demoTd.name).to.equal(@"Demo");
-    expect(demoTd.dependencies).to.haveACountOf(6);
-//    expect(demoTd.dependencies).to.equal(expected);
+    expect(td.children).to.haveACountOf(2);
+
+    for(CPTargetDefinition *target in td.children) {
+      if ([target.name isEqualToString:@"Demo"]) {
+        expect(target.dependencies).to.haveACountOf(6);
+        expect(target.dependencies[0].attributes).to.equal(@{ @":path": @"../" });
+      } else {
+        NSArray *expectedOnDemoTests = @[
+          [[CPDependency alloc] initWithName:@"Expecta" requirements:@[] attributes:@{}],
+          [[CPDependency alloc] initWithName:@"OCMockito" requirements:@[] attributes:@{}],
+          [[CPDependency alloc] initWithName:@"Specta" requirements:@[] attributes:@{}]
+        ];
+        expect(target.name).to.equal(@"DemoTests");
+        expect(target.dependencies).to.haveACountOf(3);
+        expect(target.dependencies).to.equal(expectedOnDemoTests);
+      }
+    }
   });
 
   it (@"returns the children", ^{

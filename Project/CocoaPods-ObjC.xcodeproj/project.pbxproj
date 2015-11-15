@@ -17,6 +17,7 @@
 		29DA04EC1BF81ACB00EE2EC0 /* AFNetworking.podspec.yaml in Resources */ = {isa = PBXBuildFile; fileRef = E5BD22D916E9FCC500EAAEB7 /* AFNetworking.podspec.yaml */; };
 		29DA04ED1BF81ACB00EE2EC0 /* EnergyPodfile.yaml in Resources */ = {isa = PBXBuildFile; fileRef = E5BD22DA16E9FCC500EAAEB7 /* EnergyPodfile.yaml */; };
 		29DA04EF1BF81DDA00EE2EC0 /* AFNetworking3.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = 29DA04EE1BF81DDA00EE2EC0 /* AFNetworking3.podspec.json */; };
+		29DA04F71BF9306300EE2EC0 /* CPDependencySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DA04F61BF9306300EE2EC0 /* CPDependencySpec.m */; };
 		6075BA4C1BF82FCB00A5C491 /* Podfile.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 6075BA4B1BF82FCB00A5C491 /* Podfile.yaml */; };
 		B40A9B2732B28AF80874F226 /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A5E406CA420B49B49BC330 /* libPods-DemoTests.a */; };
 		DAC38F23E6C84961AC983409 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3FAED942FB46C9B89CAEBF /* libPods-Demo.a */; };
@@ -43,6 +44,7 @@
 		29DA04DB1BF81A6A00EE2EC0 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29DA04DF1BF81A6A00EE2EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29DA04EE1BF81DDA00EE2EC0 /* AFNetworking3.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AFNetworking3.podspec.json; sourceTree = "<group>"; };
+		29DA04F61BF9306300EE2EC0 /* CPDependencySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPDependencySpec.m; path = ../../Tests/CPDependencySpec.m; sourceTree = "<group>"; };
 		31A5E406CA420B49B49BC330 /* libPods-DemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406287BCCD91567C3E76E16D /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		6075BA4B1BF82FCB00A5C491 /* Podfile.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.yaml; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		29DA04DC1BF81A6A00EE2EC0 /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				29DA04F61BF9306300EE2EC0 /* CPDependencySpec.m */,
 				E5BD22D116E9FCC500EAAEB7 /* CPPodfileTest.m */,
 				E5BD22D216E9FCC500EAAEB7 /* CPSetTests.m */,
 				E5BD22D316E9FCC500EAAEB7 /* CPSpecificationTests.m */,
@@ -280,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E5BD227D16E9FAEF00EAAEB7 /* Build configuration list for PBXProject "CocoaPods-objc" */;
+			buildConfigurationList = E5BD227D16E9FAEF00EAAEB7 /* Build configuration list for PBXProject "CocoaPods-ObjC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -406,6 +409,7 @@
 			files = (
 				29DA04E51BF81AB300EE2EC0 /* CPTestsHelper.h in Sources */,
 				29DA04E61BF81AB300EE2EC0 /* CPPodfileTest.m in Sources */,
+				29DA04F71BF9306300EE2EC0 /* CPDependencySpec.m in Sources */,
 				29DA04E71BF81AB300EE2EC0 /* CPSetTests.m in Sources */,
 				29DA04E81BF81AB300EE2EC0 /* CPSpecificationTests.m in Sources */,
 				29DA04E91BF81AB300EE2EC0 /* CPTargetDefinitionTests.m in Sources */,
@@ -610,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5BD227D16E9FAEF00EAAEB7 /* Build configuration list for PBXProject "CocoaPods-objc" */ = {
+		E5BD227D16E9FAEF00EAAEB7 /* Build configuration list for PBXProject "CocoaPods-ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E5BD22B116E9FAEF00EAAEB7 /* Debug */,
