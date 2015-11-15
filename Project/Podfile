@@ -16,7 +16,3 @@ target 'DemoTests' do
   pod 'Specta'
   pod 'OCMockito'
 end
-
-#target 'executable', :exclusive => true do
-#  pod 'DSUnixTask/XPCService'
-#end
