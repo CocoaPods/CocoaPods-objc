@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'YAML-Framework'
   s.dependency 'DSUnixTask',     '~> 0.1.0'
+  s.compiler_flags = '-Wno-non-modular-include-in-framework-module'
 end
