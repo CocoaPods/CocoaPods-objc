@@ -21,19 +21,21 @@ NSString * const kCPPodfileTargetDefinitionsAttributeKey = @"target_definitions"
   [self setBackingStoreValue:workspace forKey:@"workspace"];
 }
 
-- (NSString*)sources; {
-  return [self backingStoreValueForKey:@"sources"];
+- (NSArray*)sources; {
+  id value = [self backingStoreValueForKey:@"sources"];
+  return CPCoerceToArray(value);
 }
 
-- (void)setSources:(NSString*)sources; {
+- (void)setSources:(NSArray*)sources; {
   [self setBackingStoreValue:sources forKey:@"sources"];
 }
 
-- (NSString*)plugins; {
-  return [self backingStoreValueForKey:@"plugins"];
+- (NSArray*)plugins; {
+  id value = [self backingStoreValueForKey:@"plugins"];
+  return CPCoerceToArray(value);
 }
 
-- (void)setPlugins:(NSString*)plugins; {
+- (void)setPlugins:(NSArray*)plugins; {
   [self setBackingStoreValue:plugins forKey:@"plugins"];
 }
 
@@ -57,7 +59,7 @@ NSString * const kCPPodfileTargetDefinitionsAttributeKey = @"target_definitions"
 
 - (NSArray*)targetDefinitions; {
   id value = [self backingStoreValueForKey:@"target_definitions"];
-  return CPCoherceToArray(value);
+  return CPCoerceToArray(value);
 }
 
 - (void)setTargetDefinitions:(NSArray*)targetDefinitions; {

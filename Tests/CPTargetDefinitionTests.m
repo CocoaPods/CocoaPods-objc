@@ -47,7 +47,7 @@ describe(@"A TargetDefinition loaded from a YAML file", ^{
   });
 
   it (@"returns the deployment", ^{
-    expect(targetDefinition().depleymentTarget).to.equal(nil);
+    expect(targetDefinition().deploymentTarget).to.equal(nil);
   });
 
   it (@"returns the dependencies", ^{

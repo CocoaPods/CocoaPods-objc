@@ -1,4 +1,7 @@
 PODS:
+  - CocoaPods-ObjC (0.39.0):
+    - DSUnixTask (~> 0.1.0)
+    - YAML-Framework
   - DSUnixTask (0.1.1):
     - DSUnixTask/Core (= 0.1.1)
     - DSUnixTask/XPCClient (= 0.1.1)
@@ -22,13 +25,6 @@ PODS:
   - OCHamcrest (4.3.0)
   - OCMockito (2.0.1):
     - OCHamcrest (~> 4.0)
-  - ReactiveCocoa (2.5):
-    - ReactiveCocoa/UI (= 2.5)
-  - ReactiveCocoa/Core (2.5):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
-  - ReactiveCocoa/UI (2.5):
-    - ReactiveCocoa/Core
   - REKit (1.0.2)
   - Specta (1.0.5)
   - TransformerKit (0.5.4):
@@ -56,19 +52,22 @@ PODS:
     - LibYAML (~> 0.1.4)
 
 DEPENDENCIES:
-  - DSUnixTask (~> 0.1.0)
+  - CocoaPods-ObjC (from `../`)
   - Expecta
   - KGNoise
   - NSString+Ruby
   - ObjectiveSugar
   - OCMockito
-  - ReactiveCocoa
   - REKit
   - Specta
   - TransformerKit
-  - YAML-Framework
+
+EXTERNAL SOURCES:
+  CocoaPods-ObjC:
+    :path: "../"
 
 SPEC CHECKSUMS:
+  CocoaPods-ObjC: 77262a2c7779db52b7d17dd4e4fe4baadf72466e
   DSUnixTask: 44a0f06b704797041a92c6d4eab311f2adfb0255
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   KGNoise: 1d0ffaf4c28976f6364b402182a777f2629af551
@@ -77,7 +76,6 @@ SPEC CHECKSUMS:
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
   OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
   OCMockito: f92ad4c6fac2841a88558879cfe517c40aebf91e
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   REKit: bca89038a0d494124fd8090b2dab480f00a72e1d
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
   TransformerKit: 0a235de1030a23d47c86706c0316b4a0c7105d73

@@ -46,7 +46,7 @@
 /**
  The deployment target whith which this target definition should link with.
  */
-- (NSString*)depleymentTarget;
+- (NSString*)deploymentTarget;
 
 /**
  Stores the platform and the deployment target for this library.

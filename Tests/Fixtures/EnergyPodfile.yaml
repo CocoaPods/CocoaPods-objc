@@ -1,0 +1,23 @@
+---
+target_definitions:
+  - children:
+      - dependencies:
+          - CocoaPods-ObjC:
+            - :path: "../"
+          - KGNoise
+          - NSString+Ruby
+          - ObjectiveSugar
+          - REKit
+          - TransformerKit
+        name: Demo
+      - dependencies:
+          - Expecta
+          - OCMockito
+          - Specta
+        name: DemoTests
+    inhibit_warnings:
+      all: true
+    link_with_first_target: true
+    name: Pods
+    platform:
+      osx: '10.8'

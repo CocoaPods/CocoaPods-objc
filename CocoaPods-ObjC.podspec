@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "CocoaPods-objc"
+  s.name         = "CocoaPods-ObjC"
   s.version      = "0.39.0"
   s.summary      = "Provides support for working with CocoaPods."
   s.homepage     = "https://github.com/CocoaPods/CocoaPods-objc"
