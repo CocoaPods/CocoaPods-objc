@@ -3,19 +3,29 @@
 
 #import "CPDictionaryBackedObject.h"
 
+extern NSString * const kCPTargetDefinitionNameAttributeKey;
 extern NSString * const kCPTargetDefinitionPlatformAttributeKey;
 extern NSString * const kCPTargetDefinitionPodspecsAttributeKey;
 extern NSString * const kCPTargetDefinitionExclusiveAttributeKey;
 extern NSString * const kCPTargetDefinitionLinkWithAttributeKey;
-extern NSString * const kCPTargetDefinitionInhibitAllWarningsAttributeKey;
+extern NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey;
+extern NSString * const kCPTargetDefinitionInhibitWarningsAttributeKey;
 extern NSString * const kCPTargetDefinitionUserProjectPathAttributeKey;
 extern NSString * const kCPTargetDefinitionBuildConfigurationsAttributeKey;
 extern NSString * const kCPTargetDefinitionDependenciesAttributeKey;
 extern NSString * const kCPTargetDefinitionChildrenAttributeKey;
+extern NSString * const kCPTargetDefinitionConfigurationPodWhitelistAttributeKey;
+extern NSString * const kCPTargetDefinitionUsesFrameworksAttributeKey;
 extern NSString * const kCPTargetDefinitionNameAttributeKey;
 extern NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey;
 
 @interface CPProtoTargetDefinition : CPDictionaryBackedObject
+
+/**
+  The name attribute.
+*/
+- (NSString*)name;
+- (void)setName:(NSString*)name;
 
 /**
   The platform attribute.
@@ -42,10 +52,16 @@ extern NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey;
 - (void)setLinkWith:(NSString*)linkWith;
 
 /**
-  The inhibit_all_warnings attribute.
+  The link_with_first_target attribute.
 */
-- (BOOL)inhibitAllWarnings;
-- (void)setInhibitAllWarnings:(BOOL)inhibitAllWarnings;
+- (NSString*)linkWithFirstTarget;
+- (void)setLinkWithFirstTarget:(NSString*)linkWithFirstTarget;
+
+/**
+  The inhibit_warnings attribute.
+*/
+- (NSString*)inhibitWarnings;
+- (void)setInhibitWarnings:(NSString*)inhibitWarnings;
 
 /**
   The user_project_path attribute.
@@ -70,6 +86,18 @@ extern NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey;
 */
 - (NSArray*)children;
 - (void)setChildren:(NSArray*)children;
+
+/**
+  The configuration_pod_whitelist attribute.
+*/
+- (NSString*)configurationPodWhitelist;
+- (void)setConfigurationPodWhitelist:(NSString*)configurationPodWhitelist;
+
+/**
+  The uses_frameworks attribute.
+*/
+- (NSString*)usesFrameworks;
+- (void)setUsesFrameworks:(NSString*)usesFrameworks;
 
 /**
   The name attribute.

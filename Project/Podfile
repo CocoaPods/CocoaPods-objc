@@ -1,3 +1,5 @@
+platform :osx, '10.8'
+inhibit_all_warnings!
 
 target 'Demo' do
   podspec :path => '../CocoaPods-ObjC.podspec'
@@ -10,7 +12,7 @@ target 'Demo' do
   pod 'ObjectiveSugar'
 end
 
-target 'Tests' do
+target 'DemoTests' do
   pod 'Expecta'
   pod 'Specta'
   pod 'OCMockito'

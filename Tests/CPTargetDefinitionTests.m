@@ -11,9 +11,11 @@
 #import "Specta.h"
 
 #import "CPPodfile.h"
+#import "CPTargetDefinition.h"
+#import "CPDependency.h"
 
 CPTargetDefinition* targetDefinition() {
-  NSBundle *bundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.Tests"];
+  NSBundle *bundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.objc.DemoTests"];
   NSString *path = [bundle pathForResource:@"Podfile.yaml" ofType:nil];
   NSString *yaml = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
   CPPodfile *podfile = [[CPPodfile alloc] initWithYAML:yaml];

@@ -4,19 +4,29 @@
 #import "CPProtoTargetDefinition.h"
 #import "CPDictionaryBackedObject+Private.h"
 
+NSString * const kCPTargetDefinitionNameAttributeKey = @"name";
 NSString * const kCPTargetDefinitionPlatformAttributeKey = @"platform";
 NSString * const kCPTargetDefinitionPodspecsAttributeKey = @"podspecs";
 NSString * const kCPTargetDefinitionExclusiveAttributeKey = @"exclusive";
 NSString * const kCPTargetDefinitionLinkWithAttributeKey = @"link_with";
-NSString * const kCPTargetDefinitionInhibitAllWarningsAttributeKey = @"inhibit_all_warnings";
+NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey = @"link_with_first_target";
+NSString * const kCPTargetDefinitionInhibitWarningsAttributeKey = @"inhibit_warnings";
 NSString * const kCPTargetDefinitionUserProjectPathAttributeKey = @"user_project_path";
 NSString * const kCPTargetDefinitionBuildConfigurationsAttributeKey = @"build_configurations";
 NSString * const kCPTargetDefinitionDependenciesAttributeKey = @"dependencies";
 NSString * const kCPTargetDefinitionChildrenAttributeKey = @"children";
-NSString * const kCPTargetDefinitionNameAttributeKey = @"name";
-NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey = @"link_with_first_target";
+NSString * const kCPTargetDefinitionConfigurationPodWhitelistAttributeKey = @"configuration_pod_whitelist";
+NSString * const kCPTargetDefinitionUsesFrameworksAttributeKey = @"uses_frameworks";
 
 @implementation CPProtoTargetDefinition
+
+- (NSString*)name; {
+  return [self backingStoreValueForKey:@"name"];
+}
+
+- (void)setName:(NSString*)name; {
+  [self setBackingStoreValue:name forKey:@"name"];
+}
 
 - (NSString*)platform; {
   return [self backingStoreValueForKey:@"platform"];
@@ -52,13 +62,20 @@ NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey = @"link_wit
   [self setBackingStoreValue:linkWith forKey:@"link_with"];
 }
 
-- (BOOL)inhibitAllWarnings; {
-  id value = [self backingStoreValueForKey:@"inhibit_all_warnings"];
-  return [value boolValue];
+- (NSString*)linkWithFirstTarget; {
+  return [self backingStoreValueForKey:@"link_with_first_target"];
 }
 
-- (void)setInhibitAllWarnings:(BOOL)inhibitAllWarnings; {
-  [self setBackingStoreValue:[NSNumber numberWithBool:inhibitAllWarnings] forKey:@"inhibit_all_warnings"];
+- (void)setLinkWithFirstTarget:(NSString*)linkWithFirstTarget; {
+  [self setBackingStoreValue:linkWithFirstTarget forKey:@"link_with_first_target"];
+}
+
+- (NSString*)inhibitWarnings; {
+  return [self backingStoreValueForKey:@"inhibit_warnings"];
+}
+
+- (void)setInhibitWarnings:(NSString*)inhibitWarnings; {
+  [self setBackingStoreValue:inhibitWarnings forKey:@"inhibit_warnings"];
 }
 
 - (NSString*)userProjectPath; {
@@ -96,20 +113,20 @@ NSString * const kCPTargetDefinitionLinkWithFirstTargetAttributeKey = @"link_wit
   [self setBackingStoreValue:children forKey:@"children"];
 }
 
-- (NSString*)name; {
-  return [self backingStoreValueForKey:@"name"];
+- (NSString*)configurationPodWhitelist; {
+  return [self backingStoreValueForKey:@"configuration_pod_whitelist"];
 }
 
-- (void)setName:(NSString*)name; {
-  [self setBackingStoreValue:name forKey:@"name"];
+- (void)setConfigurationPodWhitelist:(NSString*)configurationPodWhitelist; {
+  [self setBackingStoreValue:configurationPodWhitelist forKey:@"configuration_pod_whitelist"];
 }
 
-- (NSString*)linkWithFirstTarget; {
-  return [self backingStoreValueForKey:@"link_with_first_target"];
+- (NSString*)usesFrameworks; {
+  return [self backingStoreValueForKey:@"uses_frameworks"];
 }
 
-- (void)setLinkWithFirstTarget:(NSString*)linkWithFirstTarget; {
-  [self setBackingStoreValue:linkWithFirstTarget forKey:@"link_with_first_target"];
+- (void)setUsesFrameworks:(NSString*)usesFrameworks; {
+  [self setBackingStoreValue:usesFrameworks forKey:@"uses_frameworks"];
 }
 
 @end
