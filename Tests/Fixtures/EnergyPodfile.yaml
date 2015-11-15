@@ -1,23 +1,93 @@
 ---
+sources:
+  - https://github.com/artsy/Specs.git
+  - https://github.com/CocoaPods/Specs.git
+plugins:
+  cocoapods-keys:
+    keys:
+      - ArtsyAPIClientKey
+      - ArtsyAPIClientSecret
+      - HockeyAppBetaID
+      - HockeyAppLiveID
+      - IntercomAPIKey
+      - IntercomAppID
+      - SegmentBeta
+      - SegmentDev
+      - SegmentProduction
+    project: Folio
+    target: ArtsyFolio
 target_definitions:
   - children:
       - dependencies:
-          - CocoaPods-ObjC:
-            - :path: "../"
-          - KGNoise
-          - NSString+Ruby
-          - ObjectiveSugar
-          - REKit
-          - TransformerKit
-        name: Demo
+          - AFNetworking:
+            - :branch: no_ifdefs
+              :git: https://github.com/orta/AFNetworking
+          - ARAnalytics/HockeyApp:
+            - :git: https://github.com/orta/ARAnalytics.git
+          - ARAnalytics/Segmentio:
+            - :git: https://github.com/orta/ARAnalytics.git
+          - ARCollectionViewMasonryLayout
+          - ARGenericTableViewController:
+            - :git: https://github.com/orta/ARGenericTableViewController.git
+          - ARTiledImageView:
+            - :git: https://github.com/dblock/ARTiledImageView.git
+          - Artsy+UIColors
+          - Artsy+UIFonts:
+            - :branch: old_fonts_new_lib
+              :git: https://github.com/artsy/Artsy-UIFonts.git
+          - Artsy+UILabels
+          - CocoaLumberjack:
+            - "~> 1.0"
+          - DRBOperationTree:
+            - 0.0.1
+          - FLKAutoLayout:
+            - 0.1.1
+          - GHMarkdownParser
+          - GRMustache:
+            - "~> 7.0"
+          - Intercom
+          - ISO8601DateFormatter:
+            - "~> 0.7"
+          - JLRoutes
+          - KVOController
+          - libextobjc/EXTKeyPathCoding:
+            - "~> 0.3"
+          - libextobjc/EXTScope:
+            - "~> 0.3"
+          - ObjectiveSugar:
+            - :git: https://github.com/supermarin/ObjectiveSugar.git
+          - ORStackView
+          - Reachability:
+            - "~> 3.0"
+          - SFHFKeychainUtils:
+            - "~> 0.0.1"
+          - SSDataSources
+          - TPKeyboardAvoiding:
+            - :git: https://github.com/michaeltyson/TPKeyboardAvoiding.git
+          - UIView+BooleanAnimations
+          - WYPopoverController:
+            - :branch: artsy
+              :git: https://github.com/orta/WYPopoverController.git
+          - ZipArchive
+        name: ArtsyFolio
       - dependencies:
           - Expecta
-          - OCMockito
+          - Expecta+Comparison:
+            - "~> 0.1"
+          - Expecta+ContainerClasses:
+            - "~> 1.0"
+          - Expecta+Snapshots:
+            - 2.0.0
+          - Forgeries/Mocks
+          - OCMock
+          - OHHTTPStubs:
+            - "~> 3.0"
           - Specta
-        name: DemoTests
+          - XCTest+OHHTTPStubSuiteCleanUp
+        name: ArtsyFolio Tests
     inhibit_warnings:
       all: true
     link_with_first_target: true
     name: Pods
     platform:
-      osx: '10.8'
+      ios: '8.0'
