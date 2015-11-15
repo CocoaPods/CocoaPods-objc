@@ -18,9 +18,9 @@ end
 
 desc "Generates the Classes/Models/PODModelKeys.m file"
 task :generate_proto_models do
-  generate_cathegory('CPProtoSpecification', Pod::Specification::DSL.attributes.values)
-  generate_cathegory('CPProtoPodfile', podfile_attributes)
-  generate_cathegory('CPProtoTargetDefinition', target_definition_attributes)
+  generate_category('CPProtoSpecification', Pod::Specification::DSL.attributes.values)
+  generate_category('CPProtoPodfile', podfile_attributes)
+  generate_category('CPProtoTargetDefinition', target_definition_attributes)
   puts "Done"
 end
 
@@ -68,7 +68,7 @@ class StubAttribute
   attr_accessor :types
 end
 
-def generate_cathegory(objc_class ,attributes)
+def generate_category(objc_class ,attributes)
   header = header_for_attributes_category(objc_class, attributes)
   header_path = "Classes/Models/Basic Models/Generated/#{objc_class}.h"
   implementation = implementation_for_attributes_category(objc_class, attributes)
