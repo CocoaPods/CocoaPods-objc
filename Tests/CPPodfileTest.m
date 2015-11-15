@@ -30,7 +30,7 @@ describe(@"Podfile", ^{
   });
 
   it (@"returns the workspace", ^{
-    expect(podfile().workspace).to.equal(@"MyWorkspace");
+    expect(podfile().workspace).to.beNil();
   });
 
   it (@"returns whether it should generate bridge support", ^{

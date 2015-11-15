@@ -41,6 +41,9 @@ NSString * const kCPPodfileTargetDefinitionsAttributeKey = @"target_definitions"
 
 - (BOOL)setArcCompatibilityFlag; {
   id value = [self backingStoreValueForKey:@"set_arc_compatibility_flag"];
+  if (!value) {
+    return YES;
+  }
   return [value boolValue];
 }
 
@@ -50,6 +53,9 @@ NSString * const kCPPodfileTargetDefinitionsAttributeKey = @"target_definitions"
 
 - (BOOL)generateBridgeSupport; {
   id value = [self backingStoreValueForKey:@"generate_bridge_support"];
+  if (!value) {
+    return YES;
+  }
   return [value boolValue];
 }
 

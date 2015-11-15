@@ -43,11 +43,11 @@ describe(@"A TargetDefinition loaded from a YAML file", ^{
   });
 
   it (@"returns the platform", ^{
-    expect(targetDefinition().platformName).to.equal(@"ios");
+    expect(targetDefinition().platformName).to.equal(@"osx");
   });
 
   it (@"returns the deployment", ^{
-    expect(targetDefinition().deploymentTarget).to.equal(nil);
+    expect(targetDefinition().deploymentTarget).to.equal(@"10.8");
   });
 
   it (@"returns the dependencies", ^{
@@ -58,12 +58,16 @@ describe(@"A TargetDefinition loaded from a YAML file", ^{
       [[CPDependency alloc] initWithName:@"ASIWebPageRequest" requirements:@[@"< 1.8.2"]],
 //      [[CPDependency alloc] initWithName:@"Reachability" requirements:nil],
     ];
-    expect(targetDefinition().dependencies).to.equal(expected);
+    CPTargetDefinition *td = targetDefinition();
+    CPTargetDefinition *demoTd = td.children[1];
+    expect(demoTd.name).to.equal(@"Demo");
+    expect(demoTd.dependencies).to.haveACountOf(6);
+//    expect(demoTd.dependencies).to.equal(expected);
   });
 
   it (@"returns the children", ^{
     CPTargetDefinition *child = [targetDefinition().children lastObject];
-    expect(child.name).to.equal(@"Tests");
+    expect(child.name).to.equal(@"DemoTests");
   });
 
 });

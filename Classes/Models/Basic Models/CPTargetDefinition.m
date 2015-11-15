@@ -40,7 +40,7 @@
   [self setBackingStoreValue:nil forKey:kCPTargetDefinitionChildrenAttributeKey];
 
   NSArray *dependencyArrays = [self backingStoreValueForKey:kCPTargetDefinitionDependenciesAttributeKey];
-  NSMutableArray *dependencies = [NSMutableArray new];
+  NSMutableArray <CPDependency *>*dependencies = [NSMutableArray new];
   [dependencyArrays enumerateObjectsUsingBlock:^(id value, NSUInteger idx, BOOL *stop) {
     NSString *name;
     NSArray *requirements;
