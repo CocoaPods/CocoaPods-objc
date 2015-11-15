@@ -10,7 +10,7 @@
 #import <YAMLSerialization.h>
 
 NSString* fixture(NSString *name) {
-  NSBundle *bundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.Tests"];
+  NSBundle *bundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.objc.DemoTests"];
   NSString *path = [bundle pathForResource:name ofType:nil];
   return path;
 }

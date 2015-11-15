@@ -6,18 +6,10 @@
 //  Copyright (c) 2013 CocoaPods. MIT License.
 //
 
-//
-//  CPVersion.m
-//  CocoaPods-Core
-//
-//  Created by Fabio Pelosin on 02/03/13.
-//  Copyright (c) 2013 CocoaPods. MIT License.
-//
-
-
 #import "CPTestsHelper.h"
 
 #import "CPSet.h"
+#import "CPSource.h"
 
 CPSet* set() {
   CPSource *custom = mock([CPSource class]);

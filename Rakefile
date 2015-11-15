@@ -18,9 +18,10 @@ end
 
 desc "Generates the Classes/Models/PODModelKeys.m file"
 task :generate_proto_models do
-  generate_cathegory('CPProtoSpecification', Pod::Specification::DSL.attributes.values)
-  generate_cathegory('CPProtoPodfile', podfile_attributes)
-  generate_cathegory('CPProtoTargetDefinition', target_definition_attributes)
+  generate_category('CPProtoSpecification', Pod::Specification::DSL.attributes.values)
+  generate_category('CPProtoPodfile', podfile_attributes)
+  generate_category('CPProtoTargetDefinition', target_definition_attributes)
+  puts "Done"
 end
 
 
@@ -51,7 +52,7 @@ def podfile_attributes
   Pod::Podfile::HASH_KEYS.map do |name|
     attr = StubAttribute.new
     attr.name = name
-    if name == 'target_definitions'
+    if name == 'target_definitions' || name == 'sources' || name == 'plugins'
       attr.container = Array
     end
     if name == 'generate_bridge_support' || name == 'set_arc_compatibility_flag'
@@ -67,7 +68,7 @@ class StubAttribute
   attr_accessor :types
 end
 
-def generate_cathegory(objc_class ,attributes)
+def generate_category(objc_class ,attributes)
   header = header_for_attributes_category(objc_class, attributes)
   header_path = "Classes/Models/Basic Models/Generated/#{objc_class}.h"
   implementation = implementation_for_attributes_category(objc_class, attributes)
@@ -169,10 +170,10 @@ def getter_body(attribute)
   case class_for_attribute(attribute)
   when 'NSArray*'
     lines << "id value = [self backingStoreValueForKey:@\"#{attribute.name}\"];"
-    lines << 'return CPCoherceToArray(value);'
+    lines << 'return CPCoerceToArray(value);'
   when 'NSDictionary*'
     lines << "id value = [self backingStoreValueForKey:@\"#{attribute.name}\"];"
-    lines << 'return CPCoherceToDictionary(value);'
+    lines << 'return CPCoerceToDictionary(value);'
   when 'BOOL'
     lines << "id value = [self backingStoreValueForKey:@\"#{attribute.name}\"];"
     lines << 'return [value boolValue];'
@@ -216,4 +217,3 @@ def class_for_attribute(attribute)
     end
   end
 end
-

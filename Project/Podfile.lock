@@ -1,79 +1,84 @@
 PODS:
-  - DSUnixTask (0.1.0):
-    - DSUnixTask/Core (= 0.1.0)
-    - DSUnixTask/XPCClient (= 0.1.0)
-    - DSUnixTask/XPCService (= 0.1.0)
-  - DSUnixTask/Core (0.1.0):
-    - DSUnixTask/Core/TaskManagers (= 0.1.0)
-    - DSUnixTask/Core/TaskRunner (= 0.1.0)
-    - DSUnixTask/Core/Tasks (= 0.1.0)
-  - DSUnixTask/Core/TaskManagers (0.1.0)
-  - DSUnixTask/Core/TaskRunner (0.1.0)
-  - DSUnixTask/Core/Tasks (0.1.0)
-  - DSUnixTask/XPCClient (0.1.0):
+  - CocoaPods-ObjC (0.39.0):
+    - DSUnixTask (~> 0.1.0)
+    - YAML-Framework
+  - DSUnixTask (0.1.1):
+    - DSUnixTask/Core (= 0.1.1)
+    - DSUnixTask/XPCClient (= 0.1.1)
+    - DSUnixTask/XPCService (= 0.1.1)
+  - DSUnixTask/Core (0.1.1):
+    - DSUnixTask/Core/TaskManagers (= 0.1.1)
+    - DSUnixTask/Core/TaskRunner (= 0.1.1)
+    - DSUnixTask/Core/Tasks (= 0.1.1)
+  - DSUnixTask/Core/TaskManagers (0.1.1)
+  - DSUnixTask/Core/TaskRunner (0.1.1)
+  - DSUnixTask/Core/Tasks (0.1.1)
+  - DSUnixTask/XPCClient (0.1.1):
     - DSUnixTask/Core
-  - DSUnixTask/XPCService (0.1.0):
+  - DSUnixTask/XPCService (0.1.1):
     - DSUnixTask/Core/TaskRunner
-  - Expecta (0.2.1)
-  - JRSwizzle (1.0)
-  - KGNoise (1.1.0)
-  - libextobjc/EXTConcreteProtocol (0.2.5):
-    - libextobjc/RuntimeExtensions
-  - libextobjc/EXTKeyPathCoding (0.2.5):
-    - libextobjc/RuntimeExtensions
-  - libextobjc/EXTScope (0.2.5):
-    - libextobjc/RuntimeExtensions
-  - libextobjc/RuntimeExtensions (0.2.5)
+  - Expecta (1.0.5)
+  - KGNoise (1.2.1)
   - LibYAML (0.1.4)
-  - NSString-Ruby (1.0a)
-  - ObjectiveSugar (0.6.2)
-  - OCHamcrest (1.9)
-  - OCMockito (0.23):
-    - OCHamcrest (= 1.9)
-  - ReactiveCocoa (1.0.0):
-    - ReactiveCocoa/Core (= 1.0.0)
-    - ReactiveCocoa/RACExtensions (= 1.0.0)
-  - ReactiveCocoa/Core (1.0.0):
-    - JRSwizzle (~> 1.0)
-    - libextobjc/EXTConcreteProtocol (~> 0.2.5)
-    - libextobjc/EXTKeyPathCoding (~> 0.2.5)
-    - libextobjc/EXTScope (~> 0.2.5)
-  - ReactiveCocoa/RACExtensions (1.0.0):
-    - ReactiveCocoa/Core
-  - REKit (1.0.0)
-  - Specta (0.1.8)
-  - TransformerKit (0.0.1)
-  - YAML-Framework (0.0.1):
+  - NSString+Ruby (1.1)
+  - ObjectiveSugar (1.1.0)
+  - OCHamcrest (4.3.0)
+  - OCMockito (2.0.1):
+    - OCHamcrest (~> 4.0)
+  - REKit (1.0.2)
+  - Specta (1.0.5)
+  - TransformerKit (0.5.4):
+    - TransformerKit/Core (= 0.5.4)
+    - TransformerKit/Cryptography (= 0.5.4)
+    - TransformerKit/Data (= 0.5.4)
+    - TransformerKit/Date (= 0.5.4)
+    - TransformerKit/Image (= 0.5.4)
+    - TransformerKit/JSON (= 0.5.4)
+    - TransformerKit/String (= 0.5.4)
+  - TransformerKit/Core (0.5.4)
+  - TransformerKit/Cryptography (0.5.4):
+    - TransformerKit/Core
+  - TransformerKit/Data (0.5.4):
+    - TransformerKit/Core
+  - TransformerKit/Date (0.5.4):
+    - TransformerKit/Core
+  - TransformerKit/Image (0.5.4):
+    - TransformerKit/Core
+  - TransformerKit/JSON (0.5.4):
+    - TransformerKit/Core
+  - TransformerKit/String (0.5.4):
+    - TransformerKit/Core
+  - YAML-Framework (0.0.2):
     - LibYAML (~> 0.1.4)
 
 DEPENDENCIES:
-  - DSUnixTask (~> 0.1.0)
+  - CocoaPods-ObjC (from `../`)
   - Expecta
   - KGNoise
-  - NSString-Ruby
+  - NSString+Ruby
   - ObjectiveSugar
   - OCMockito
-  - ReactiveCocoa
   - REKit
   - Specta
   - TransformerKit
-  - YAML-Framework
+
+EXTERNAL SOURCES:
+  CocoaPods-ObjC:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  DSUnixTask: a22f7ce58c9379f97e20bd32b307caadb9edd5b8
-  Expecta: d46fb1bd78c90a83da0158b9b1e108de106e369f
-  JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
-  KGNoise: 8ebc646c982cf468f01b4789e4ab1cf849eb413d
-  libextobjc: 2cbc74caf8bdc74a86fdf24673f773c83424ea98
-  LibYAML: 49b77e5b3f4417fa512a8f1f4675a78480bf6b3d
-  NSString-Ruby: 1b397300ba44ab5310986a91519eb9cc70a1c41b
-  ObjectiveSugar: 50bcd329b18ab6da6457e1bf55be71acb7c39d44
-  OCHamcrest: f8393efd5a49d91879be573635d6183effacc0ab
-  OCMockito: 2223021dd82697fc536c403d6850d2ed8ffae578
-  ReactiveCocoa: bde72a9123e7bd565d06d677d8ad79b18971aec7
-  REKit: 3bda2d3d7b4c0a5cf653e2f5551158b16aa9ba56
-  Specta: cf47ef9f8c3ae15a9d59ee5e74d2b560900d2249
-  TransformerKit: 5d914b347bdad31fae9ea63b76f2d304f7fe3c6a
-  YAML-Framework: 58356f92e0f5e1461af430703497b7053bed6fa7
+  CocoaPods-ObjC: 77262a2c7779db52b7d17dd4e4fe4baadf72466e
+  DSUnixTask: 44a0f06b704797041a92c6d4eab311f2adfb0255
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  KGNoise: 1d0ffaf4c28976f6364b402182a777f2629af551
+  LibYAML: 3af2c5adf3a40dff936d087aa6a77edc10036bc5
+  NSString+Ruby: e68b2d9408107888f3d82436b0d1cd24c66c4b5b
+  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
+  OCMockito: f92ad4c6fac2841a88558879cfe517c40aebf91e
+  REKit: bca89038a0d494124fd8090b2dab480f00a72e1d
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  TransformerKit: 0a235de1030a23d47c86706c0316b4a0c7105d73
+  YAML-Framework: 6fe698e19d39d778829f5937e39d1e6bc12afd7b
 
-COCOAPODS: 0.17.0.rc3
+COCOAPODS: 0.39.0

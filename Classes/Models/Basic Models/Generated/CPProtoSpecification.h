@@ -3,16 +3,23 @@
 
 #import "CPDictionaryBackedObject.h"
 
+extern NSString * const kCPSpecificationXcconfigAttributeKey;
 extern NSString * const kCPSpecificationNameAttributeKey;
 extern NSString * const kCPSpecificationVersionAttributeKey;
+extern NSString * const kCPSpecificationCocoapodsVersionAttributeKey;
 extern NSString * const kCPSpecificationAuthorsAttributeKey;
+extern NSString * const kCPSpecificationSocialMediaUrlAttributeKey;
+extern NSString * const kCPSpecificationDocsetUrlAttributeKey;
 extern NSString * const kCPSpecificationLicenseAttributeKey;
 extern NSString * const kCPSpecificationHomepageAttributeKey;
 extern NSString * const kCPSpecificationSourceAttributeKey;
 extern NSString * const kCPSpecificationSummaryAttributeKey;
 extern NSString * const kCPSpecificationDescriptionAttributeKey;
 extern NSString * const kCPSpecificationScreenshotsAttributeKey;
-extern NSString * const kCPSpecificationDocumentationAttributeKey;
+extern NSString * const kCPSpecificationDocumentationUrlAttributeKey;
+extern NSString * const kCPSpecificationPrepareCommandAttributeKey;
+extern NSString * const kCPSpecificationDeprecatedAttributeKey;
+extern NSString * const kCPSpecificationDeprecatedInFavorOfAttributeKey;
 extern NSString * const kCPSpecificationPlatformsAttributeKey;
 extern NSString * const kCPSpecificationDependenciesAttributeKey;
 extern NSString * const kCPSpecificationRequiresArcAttributeKey;
@@ -20,19 +27,32 @@ extern NSString * const kCPSpecificationFrameworksAttributeKey;
 extern NSString * const kCPSpecificationWeakFrameworksAttributeKey;
 extern NSString * const kCPSpecificationLibrariesAttributeKey;
 extern NSString * const kCPSpecificationCompilerFlagsAttributeKey;
-extern NSString * const kCPSpecificationXcconfigAttributeKey;
+extern NSString * const kCPSpecificationPodTargetXcconfigAttributeKey;
+extern NSString * const kCPSpecificationUserTargetXcconfigAttributeKey;
 extern NSString * const kCPSpecificationPrefixHeaderContentsAttributeKey;
 extern NSString * const kCPSpecificationPrefixHeaderFileAttributeKey;
+extern NSString * const kCPSpecificationModuleNameAttributeKey;
 extern NSString * const kCPSpecificationHeaderDirAttributeKey;
 extern NSString * const kCPSpecificationHeaderMappingsDirAttributeKey;
 extern NSString * const kCPSpecificationSourceFilesAttributeKey;
 extern NSString * const kCPSpecificationPublicHeaderFilesAttributeKey;
+extern NSString * const kCPSpecificationPrivateHeaderFilesAttributeKey;
+extern NSString * const kCPSpecificationVendoredFrameworksAttributeKey;
+extern NSString * const kCPSpecificationVendoredLibrariesAttributeKey;
+extern NSString * const kCPSpecificationResourceBundlesAttributeKey;
 extern NSString * const kCPSpecificationResourcesAttributeKey;
 extern NSString * const kCPSpecificationExcludeFilesAttributeKey;
 extern NSString * const kCPSpecificationPreservePathsAttributeKey;
-extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
+extern NSString * const kCPSpecificationModuleMapAttributeKey;
+extern NSString * const kCPSpecificationDefaultSubspecsAttributeKey;
 
 @interface CPProtoSpecification : CPDictionaryBackedObject
+
+/**
+  The xcconfig attribute.
+*/
+- (NSDictionary*)xcconfig;
+- (void)setXcconfig:(NSDictionary*)xcconfig;
 
 /**
   The name attribute.
@@ -47,10 +67,28 @@ extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
 - (void)setVersion:(NSString*)version;
 
 /**
+  The cocoapods_version attribute.
+*/
+- (NSString*)cocoapodsVersion;
+- (void)setCocoapodsVersion:(NSString*)cocoapodsVersion;
+
+/**
   The authors attribute.
 */
-- (NSString*)authors;
-- (void)setAuthors:(NSString*)authors;
+- (NSDictionary*)authors;
+- (void)setAuthors:(NSDictionary*)authors;
+
+/**
+  The social_media_url attribute.
+*/
+- (NSString*)socialMediaUrl;
+- (void)setSocialMediaUrl:(NSString*)socialMediaUrl;
+
+/**
+  The docset_url attribute.
+*/
+- (NSString*)docsetUrl;
+- (void)setDocsetUrl:(NSString*)docsetUrl;
 
 /**
   The license attribute.
@@ -89,10 +127,28 @@ extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
 - (void)setScreenshots:(NSArray*)screenshots;
 
 /**
-  The documentation attribute.
+  The documentation_url attribute.
 */
-- (NSDictionary*)documentation;
-- (void)setDocumentation:(NSDictionary*)documentation;
+- (NSString*)documentationUrl;
+- (void)setDocumentationUrl:(NSString*)documentationUrl;
+
+/**
+  The prepare_command attribute.
+*/
+- (NSString*)prepareCommand;
+- (void)setPrepareCommand:(NSString*)prepareCommand;
+
+/**
+  The deprecated attribute.
+*/
+- (BOOL)deprecated;
+- (void)setDeprecated:(BOOL)deprecated;
+
+/**
+  The deprecated_in_favor_of attribute.
+*/
+- (NSString*)deprecatedInFavorOf;
+- (void)setDeprecatedInFavorOf:(NSString*)deprecatedInFavorOf;
 
 /**
   The platforms attribute.
@@ -109,8 +165,8 @@ extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
 /**
   The requires_arc attribute.
 */
-- (BOOL)requiresArc;
-- (void)setRequiresArc:(BOOL)requiresArc;
+- (NSString*)requiresArc;
+- (void)setRequiresArc:(NSString*)requiresArc;
 
 /**
   The frameworks attribute.
@@ -137,10 +193,16 @@ extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
 - (void)setCompilerFlags:(NSArray*)compilerFlags;
 
 /**
-  The xcconfig attribute.
+  The pod_target_xcconfig attribute.
 */
-- (NSDictionary*)xcconfig;
-- (void)setXcconfig:(NSDictionary*)xcconfig;
+- (NSDictionary*)podTargetXcconfig;
+- (void)setPodTargetXcconfig:(NSDictionary*)podTargetXcconfig;
+
+/**
+  The user_target_xcconfig attribute.
+*/
+- (NSDictionary*)userTargetXcconfig;
+- (void)setUserTargetXcconfig:(NSDictionary*)userTargetXcconfig;
 
 /**
   The prefix_header_contents attribute.
@@ -153,6 +215,12 @@ extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
 */
 - (NSString*)prefixHeaderFile;
 - (void)setPrefixHeaderFile:(NSString*)prefixHeaderFile;
+
+/**
+  The module_name attribute.
+*/
+- (NSString*)moduleName;
+- (void)setModuleName:(NSString*)moduleName;
 
 /**
   The header_dir attribute.
@@ -179,6 +247,30 @@ extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
 - (void)setPublicHeaderFiles:(NSArray*)publicHeaderFiles;
 
 /**
+  The private_header_files attribute.
+*/
+- (NSArray*)privateHeaderFiles;
+- (void)setPrivateHeaderFiles:(NSArray*)privateHeaderFiles;
+
+/**
+  The vendored_frameworks attribute.
+*/
+- (NSArray*)vendoredFrameworks;
+- (void)setVendoredFrameworks:(NSArray*)vendoredFrameworks;
+
+/**
+  The vendored_libraries attribute.
+*/
+- (NSArray*)vendoredLibraries;
+- (void)setVendoredLibraries:(NSArray*)vendoredLibraries;
+
+/**
+  The resource_bundles attribute.
+*/
+- (NSDictionary*)resourceBundles;
+- (void)setResourceBundles:(NSDictionary*)resourceBundles;
+
+/**
   The resources attribute.
 */
 - (NSArray*)resources;
@@ -197,10 +289,16 @@ extern NSString * const kCPSpecificationDefaultSubspecAttributeKey;
 - (void)setPreservePaths:(NSArray*)preservePaths;
 
 /**
-  The default_subspec attribute.
+  The module_map attribute.
 */
-- (NSString*)defaultSubspec;
-- (void)setDefaultSubspec:(NSString*)defaultSubspec;
+- (NSString*)moduleMap;
+- (void)setModuleMap:(NSString*)moduleMap;
+
+/**
+  The default_subspecs attribute.
+*/
+- (NSArray*)defaultSubspecs;
+- (void)setDefaultSubspecs:(NSArray*)defaultSubspecs;
 
 @end
 

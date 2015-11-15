@@ -1,21 +1,18 @@
+platform :osx, '10.8'
+inhibit_all_warnings!
 
 target 'Demo' do
-  podspec :path => '../CocoaPods-ObjC.podspec'
+  pod 'CocoaPods-ObjC', :path => '../'
   pod 'TransformerKit'
   pod 'KGNoise'
 
-  pod 'ReactiveCocoa'
   pod 'NSString+Ruby'
   pod 'REKit'
   pod 'ObjectiveSugar'
 end
 
-target 'Tests' do
+target 'DemoTests' do
   pod 'Expecta'
   pod 'Specta'
   pod 'OCMockito'
 end
-
-#target 'executable', :exclusive => true do
-#  pod 'DSUnixTask/XPCService'
-#end

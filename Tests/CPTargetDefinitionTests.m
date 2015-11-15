@@ -11,9 +11,11 @@
 #import "Specta.h"
 
 #import "CPPodfile.h"
+#import "CPTargetDefinition.h"
+#import "CPDependency.h"
 
 CPTargetDefinition* targetDefinition() {
-  NSBundle *bundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.Tests"];
+  NSBundle *bundle = [NSBundle bundleWithIdentifier:@"org.cocoapods.objc.DemoTests"];
   NSString *path = [bundle pathForResource:@"Podfile.yaml" ofType:nil];
   NSString *yaml = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
   CPPodfile *podfile = [[CPPodfile alloc] initWithYAML:yaml];
@@ -41,27 +43,37 @@ describe(@"A TargetDefinition loaded from a YAML file", ^{
   });
 
   it (@"returns the platform", ^{
-    expect(targetDefinition().platformName).to.equal(@"ios");
+    expect(targetDefinition().platformName).to.equal(@"osx");
   });
 
   it (@"returns the deployment", ^{
-    expect(targetDefinition().depleymentTarget).to.equal(nil);
+    expect(targetDefinition().deploymentTarget).to.equal(@"10.8");
   });
 
   it (@"returns the dependencies", ^{
-    NSArray *expected =
-    @[
-      [[CPDependency alloc] initWithName:@"SSZipArchive" requirements:@[@">= 1"]],
-      [[CPDependency alloc] initWithName:@"ASIHTTPRequest" requirements:@[@"~> 1.8.0"]],
-      [[CPDependency alloc] initWithName:@"ASIWebPageRequest" requirements:@[@"< 1.8.2"]],
-//      [[CPDependency alloc] initWithName:@"Reachability" requirements:nil],
-    ];
-    expect(targetDefinition().dependencies).to.equal(expected);
+    CPTargetDefinition *td = targetDefinition();
+    expect(td.children).to.haveACountOf(2);
+
+    for(CPTargetDefinition *target in td.children) {
+      if ([target.name isEqualToString:@"Demo"]) {
+        expect(target.dependencies).to.haveACountOf(6);
+        expect(target.dependencies[0].attributes).to.equal(@{ @":path": @"../" });
+      } else {
+        NSArray *expectedOnDemoTests = @[
+          [[CPDependency alloc] initWithName:@"Expecta" requirements:@[] attributes:@{}],
+          [[CPDependency alloc] initWithName:@"OCMockito" requirements:@[] attributes:@{}],
+          [[CPDependency alloc] initWithName:@"Specta" requirements:@[] attributes:@{}]
+        ];
+        expect(target.name).to.equal(@"DemoTests");
+        expect(target.dependencies).to.haveACountOf(3);
+        expect(target.dependencies).to.equal(expectedOnDemoTests);
+      }
+    }
   });
 
   it (@"returns the children", ^{
     CPTargetDefinition *child = [targetDefinition().children lastObject];
-    expect(child.name).to.equal(@"Tests");
+    expect(child.name).to.equal(@"DemoTests");
   });
 
 });

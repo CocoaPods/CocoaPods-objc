@@ -9,9 +9,10 @@
 #import "CPAppDelegate.h"
 #import "DSUnixTaskSubProcessManager.h"
 #import "CPManager.h"
+#import "CPSet.h"
 
-#import <ReactiveCocoa.h>
-#import <EXTScope.h>
+//#import <ReactiveCocoa.h>
+//#import <EXTScope.h>
 
 
 //------------------------------------------------------------------------------
@@ -53,13 +54,12 @@
   NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
   [self.specsArrayController setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
 
-  @weakify(self);
-  [RACAble(self.specsArrayController.selectedObjects) subscribeNext:^(NSArray *selection) {
-    @strongify(self)
-    [self _selectionDidChange];
-  }];
+//  __weak typeof(self) weakself = self;
+//  [RACAble(self.specsArrayController.selectedObjects) subscribeNext:^(NSArray *selection) {
+//    [weakself _selectionDidChange];
+//  }];
 
-  [self.searchField setDelegate:self];
+//  [self.searchField setDelegate:self];
 }
 
 //------------------------------------------------------------------------------
@@ -76,12 +76,12 @@
 
   CPSet *set = self.specsArrayController.selectedObjects[0];
   NSString *specPath = [set representativeSpecificationPath];
-  @weakify(self);
-  [[CPManager sharedManager] loadSpecificationWithPath:specPath block:^(CPSpecification *spec) {
-    @strongify(self)
-    NSString *html = fullHTMLForObject([spec dictionaryRepresentation]);
-    [[self.webView mainFrame] loadHTMLString:html baseURL:nil];
-  }];
+//  @weakify(self);
+//  [[CPManager sharedManager] loadSpecificationWithPath:specPath block:^(CPSpecification *spec) {
+//    @strongify(self)
+//    NSString *html = fullHTMLForObject([spec dictionaryRepresentation]);
+//    [[self.webView mainFrame] loadHTMLString:html baseURL:nil];
+//  }];
 }
 
 - (void)controlTextDidChange:(NSNotification *)notification {

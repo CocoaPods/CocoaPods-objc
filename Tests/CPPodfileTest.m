@@ -14,6 +14,12 @@ CPPodfile* podfile() {
   return [[CPPodfile alloc] initWithYAML:yaml];
 }
 
+CPPodfile* energyPodfile() {
+  NSString *yaml = yamlFixture(@"EnergyPodfile.yaml");
+  return [[CPPodfile alloc] initWithYAML:yaml];
+}
+
+
 SpecBegin(CPPodfile)
 
 describe(@"Podfile", ^{
@@ -24,7 +30,7 @@ describe(@"Podfile", ^{
   });
 
   it (@"returns the workspace", ^{
-    expect(podfile().workspace).to.equal(@"MyWorkspace");
+    expect(podfile().workspace).to.beNil();
   });
 
   it (@"returns whether it should generate bridge support", ^{
@@ -33,6 +39,10 @@ describe(@"Podfile", ^{
 
   it (@"returns whether it should set the ARC compatibility flag", ^{
     expect(podfile().setArcCompatibilityFlag).to.beTruthy();
+  });
+
+  it (@"returns an empty set of plugins", ^{
+    expect(podfile().plugins.count).to.equal(0);
   });
 
 });

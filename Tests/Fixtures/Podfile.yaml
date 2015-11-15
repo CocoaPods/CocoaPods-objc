@@ -1,24 +1,23 @@
 ---
 target_definitions:
-  - name: Pods
+  - children:
+      - dependencies:
+          - CocoaPods-ObjC:
+            - :path: "../"
+          - KGNoise
+          - NSString+Ruby
+          - ObjectiveSugar
+          - REKit
+          - TransformerKit
+        name: Demo
+      - dependencies:
+          - Expecta
+          - OCMockito
+          - Specta
+        name: DemoTests
+    inhibit_warnings:
+      all: true
     link_with_first_target: true
-    platform: ios
-    dependencies:
-    - SSZipArchive:
-      - '>= 1'
-    - ASIHTTPRequest:
-      - ~> 1.8.0
-    - Reachability
-    - ASIWebPageRequest:
-      - < 1.8.2
-    children:
-      - name: Tests
-        exclusive: true
-        dependencies:
-        - Expecta
-        - Specta
-
-workspace: MyWorkspace
-generate_bridge_support: true
-set_arc_compatibility_flag: true
-
+    name: Pods
+    platform:
+      osx: '10.8'

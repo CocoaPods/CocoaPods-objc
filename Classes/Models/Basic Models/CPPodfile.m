@@ -23,7 +23,7 @@
 //------------------------------------------------------------------------------
 
 /**
- Convets the target definition to their object representation and stores them 
+ Converts the target definition to their object representation and stores them
  in a mutable array. The information is removed from the backing store and
  merged back when needed.
  */
